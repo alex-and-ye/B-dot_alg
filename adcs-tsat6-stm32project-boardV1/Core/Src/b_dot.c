@@ -1,3 +1,9 @@
+#include "Magnetorquers_driver.h"
+#include "GYRO_A3G4250DTR_driver.h"
+#include "magnetometer_driver.h"
+
+
+// Calculating magnetic field data
 Vector3 mag_raw, gyro_raw, mag_calibrated, orientation;
 Matrix3x3 rotation_matrix;
 
@@ -27,6 +33,10 @@ while (1) {
     // Wait for next sample
     delay(SAMPLE_PERIOD);
 }
+
+
+
+// b-dot algorithm given Magnetic field data
 
 #define K 1000000  // Control gain
 #define DT 1.0     // Time step (1 second)
