@@ -31,6 +31,9 @@
 #include "Magnetorquers_driver.h"
 #include "GYRO_A3G4250DTR_driver.h"
 #include "magnetometer_driver.h"
+#include "rls_mag_calibration.h"
+
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
